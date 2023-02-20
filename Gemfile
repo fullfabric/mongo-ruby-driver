@@ -14,7 +14,7 @@ else
 end
 
 group :deploy do
-  gem 'git'
+  gem 'git', '1.4.0'
   gem 'yard'
   gem 'version_bumper'
   gem 'kramdown'
