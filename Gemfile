@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'json', '<= 1.8.1'
+gem 'json', '>= 1.8'
 gem 'rake', '10.1.1', :require => ['rake/testtask']
 gem 'rake-compiler', :require => ['rake/extensiontask', 'rake/javaextensiontask']
 gem 'mime-types', '~> 1.25'
@@ -22,7 +22,7 @@ end
 
 group :testing do
   gem 'test-unit', '~>2.0'
-  gem 'mocha', ">=0.13.0", :require => 'mocha/setup'
+  gem 'mocha', "0.13.0", :require => 'mocha/setup'
   gem 'shoulda', ">=3.3.2"
   if RUBY_VERSION >= '1.9.2'
     gem 'shoulda-matchers', '~>2.0'
