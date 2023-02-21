@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'json', '>= 1.8'
 gem 'rake', '10.1.1', :require => ['rake/testtask']
-gem 'rake-compiler', :require => ['rake/extensiontask', 'rake/javaextensiontask']
+gem 'rake-compiler', '~> 0.9', :require => ['rake/extensiontask', 'rake/javaextensiontask']
 gem 'mime-types', '~> 1.25'
 gem 'i18n', '0.6.11'
 
