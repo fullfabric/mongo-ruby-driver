@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'json', '<= 1.8.1'
+gem 'json', '>= 1.8'
 gem 'rake', '10.1.1', :require => ['rake/testtask']
-gem 'rake-compiler', :require => ['rake/extensiontask', 'rake/javaextensiontask']
+gem 'rake-compiler', '~> 0.9', :require => ['rake/extensiontask', 'rake/javaextensiontask']
 gem 'mime-types', '~> 1.25'
 gem 'i18n', '0.6.11'
 gem 'tins', '1.6.0'
@@ -15,7 +15,7 @@ else
 end
 
 group :deploy do
-  gem 'git'
+  gem 'git', '1.4.0'
   gem 'yard'
   gem 'version_bumper'
   gem 'kramdown'
@@ -23,14 +23,14 @@ end
 
 group :testing do
   gem 'test-unit', '~>2.0'
-  gem 'mocha', ">=0.13.0", :require => 'mocha/setup'
+  gem 'mocha', "0.13.0", :require => 'mocha/setup'
   gem 'shoulda', ">=3.3.2"
   if RUBY_VERSION >= '1.9.2'
     gem 'shoulda-matchers', '~>2.0'
   else
     gem 'shoulda-matchers', '~>1.0'
   end
-  gem 'sfl'
+  gem 'sfl', '1.2'
   gem 'rest-client', '1.6.8'
   if RUBY_VERSION > '1.8.7' || RUBY_PLATFORM =~ /java/
     gem 'coveralls', :require => false
